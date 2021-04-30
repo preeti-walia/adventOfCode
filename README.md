@@ -1,7 +1,7 @@
 Symfony Demo Application
 ========================
 
-The "Symfony Demo Application" is a reference application created to show how
+The "Symfony Demo Application for advent of code execution" is a reference application created to show how
 to develop applications following the [Symfony Best Practices][1].
 
 Requirements
@@ -43,6 +43,13 @@ Then access the application in your browser at the given URL (<https://localhost
 If you don't have the Symfony binary installed, run `php -S localhost:8000 -t public/`
 to use the built-in PHP web server or [configure a web server][3] like Nginx or
 Apache to run the application.
+Run Programs of adventofcode for day4 and day9
+----------------------------
+
+To run advent of code programs please follow links:
+https://localhost:8000/en/code/day4
+https://localhost:8000/en/code/day9
+
 
 Tests
 -----
@@ -51,7 +58,10 @@ Execute this command to run tests:
 
 ```bash
 $ cd my_project/
-$ ./bin/phpunit
+$ ./bin/phpunit tests/CodeControllerTest.php
+$  ./bin/phpunit --filter testday4 tests/CodeControllerTest.php
+$  ./bin/phpunit --filter testday4 tests/CodeControllerTest.php
+
 ```
 
 [1]: https://symfony.com/doc/current/best_practices.html
