@@ -46,9 +46,8 @@ Apache to run the application.
 Run Programs of adventofcode for day4 and day9
 ----------------------------
 
-To run advent of code programs please follow links:
-https://localhost:8000/en/code/day4
-https://localhost:8000/en/code/day9
+* https://localhost:8000/en/code/day4
+* https://localhost:8000/en/code/day9
 
 
 Tests
