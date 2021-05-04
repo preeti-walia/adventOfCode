@@ -44,14 +44,17 @@ If you don't have the Symfony binary installed, run `php -S localhost:8000 -t pu
 to use the built-in PHP web server or [configure a web server][3] like Nginx or
 Apache to run the application.
 
-
-
+code
+----------------------------
+* all the code written in src/Controller/CodeController
 
 Run Programs of adventofcode for day4 and day9
 ----------------------------
 
-* https://localhost:8000/en/code/day4
-* https://localhost:8000/en/code/day9
+* https://localhost:8000/en/code/day4/part1
+* https://localhost:8000/en/code/day4/part2
+* https://localhost:8000/en/code/day9/part1
+* https://localhost:8000/en/code/day9/part2
 
 
 Tests
@@ -62,8 +65,10 @@ Execute this command to run tests:
 ```bash
 $ cd my_project/
 $ ./bin/phpunit tests/CodeControllerTest.php
-$  ./bin/phpunit --filter testday4 tests/CodeControllerTest.php
-$  ./bin/phpunit --filter testday4 tests/CodeControllerTest.php
+$  ./bin/phpunit --filter testday4a tests/CodeControllerTest.php
+$  ./bin/phpunit --filter testday4b tests/CodeControllerTest.php
+$  ./bin/phpunit --filter testday9a tests/CodeControllerTest.php
+$  ./bin/phpunit --filter testday9b tests/CodeControllerTest.php
 
 ```
 
